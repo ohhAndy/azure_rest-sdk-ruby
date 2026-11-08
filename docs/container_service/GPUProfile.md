@@ -5,6 +5,7 @@
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
 | **driver** | [**GPUDriver**](GPUDriver.md) |  | [optional] |
+| **nvidia** | [**NvidiaGPUProfile**](NvidiaGPUProfile.md) |  | [optional] |
 
 ## Example
 
@@ -12,7 +13,8 @@
 require 'azure_rest'
 
 instance = AzureRest::GPUProfile.new(
-  driver: null
+  driver: null,
+  nvidia: null
 )
 ```
 

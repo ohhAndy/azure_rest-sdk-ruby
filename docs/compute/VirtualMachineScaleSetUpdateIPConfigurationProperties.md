@@ -8,6 +8,7 @@
 | **primary** | **Boolean** | Specifies the primary IP Configuration in case the network interface has more than one IP Configuration. | [optional] |
 | **public_ip_address_configuration** | [**VirtualMachineScaleSetUpdatePublicIPAddressConfiguration**](VirtualMachineScaleSetUpdatePublicIPAddressConfiguration.md) |  | [optional] |
 | **private_ip_address_version** | [**IPVersion**](IPVersion.md) |  | [optional] |
+| **private_ip_address_prefix_length** | **Integer** | The private IP address prefix length. If specified and the allocation method is dynamic, the service will allocate a CIDR block instead of a single IP address. | [optional] |
 | **application_gateway_backend_address_pools** | [**Array&lt;SubResource&gt;**](SubResource.md) | The application gateway backend address pools. | [optional] |
 | **application_security_groups** | [**Array&lt;SubResource&gt;**](SubResource.md) | Specifies an array of references to application security group. | [optional] |
 | **load_balancer_backend_address_pools** | [**Array&lt;SubResource&gt;**](SubResource.md) | The load balancer backend address pools. | [optional] |
@@ -23,6 +24,7 @@ instance = AzureRest::VirtualMachineScaleSetUpdateIPConfigurationProperties.new(
   primary: null,
   public_ip_address_configuration: null,
   private_ip_address_version: null,
+  private_ip_address_prefix_length: null,
   application_gateway_backend_address_pools: null,
   application_security_groups: null,
   load_balancer_backend_address_pools: null,

@@ -113,6 +113,7 @@ module AzureRest
     autoload :ExtensionFeatureMetadata, "azure_rest/compute/models/extension_feature_metadata.rb"
     autoload :ExtensionFeatureTag, "azure_rest/compute/models/extension_feature_tag.rb"
     autoload :ExternalHealthPolicy, "azure_rest/compute/models/external_health_policy.rb"
+    autoload :FlexProfile, "azure_rest/compute/models/flex_profile.rb"
     autoload :HardwareProfile, "azure_rest/compute/models/hardware_profile.rb"
     autoload :HighSpeedInterconnectPlacement, "azure_rest/compute/models/high_speed_interconnect_placement.rb"
     autoload :HostEndpointSettings, "azure_rest/compute/models/host_endpoint_settings.rb"

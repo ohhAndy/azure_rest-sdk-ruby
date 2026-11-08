@@ -569,7 +569,7 @@ subscription_id = '38400000-8cf0-11bd-b23e-10b96e4ef00d' # String | The ID of th
 resource_group_name = 'resource_group_name_example' # String | The name of the resource group. The name is case insensitive.
 vault_name = 'vault_name_example' # String | Name of the vault
 operation_kind = 'add' # String | Name of the operation
-parameters = AzureRest::VaultAccessPolicyParameters.new({properties: AzureRest::VaultAccessPolicyProperties.new({access_policies: [AzureRest::AccessPolicyEntry.new({tenant_id: 'tenant_id_example', object_id: 'object_id_example', permissions: AzureRest::Permissions.new})]})}) # VaultAccessPolicyParameters | Access policy to merge into the vault
+parameters = AzureRest::VaultAccessPolicyParameters.new({properties: AzureRest::VaultAccessPolicyProperties.new({access_policies: [AzureRest::AccessPolicyEntry.new({tenant_id: 'tenant_id_example', _object_id: '_object_id_example', permissions: AzureRest::Permissions.new})]})}) # VaultAccessPolicyParameters | Access policy to merge into the vault
 
 begin
   

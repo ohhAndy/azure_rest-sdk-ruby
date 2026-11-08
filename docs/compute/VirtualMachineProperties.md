@@ -5,6 +5,7 @@
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
 | **hardware_profile** | [**HardwareProfile**](HardwareProfile.md) |  | [optional] |
+| **flex_profile** | [**FlexProfile**](FlexProfile.md) |  | [optional] |
 | **scheduled_events_policy** | [**ScheduledEventsPolicy**](ScheduledEventsPolicy.md) |  | [optional] |
 | **storage_profile** | [**StorageProfile**](StorageProfile.md) |  | [optional] |
 | **additional_capabilities** | [**AdditionalCapabilities**](AdditionalCapabilities.md) |  | [optional] |
@@ -41,6 +42,7 @@ require 'azure_rest'
 
 instance = AzureRest::VirtualMachineProperties.new(
   hardware_profile: null,
+  flex_profile: null,
   scheduled_events_policy: null,
   storage_profile: null,
   additional_capabilities: null,

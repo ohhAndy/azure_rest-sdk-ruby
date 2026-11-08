@@ -5,7 +5,7 @@
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
 | **resource_id** | **String** | The resource ID of the managed identity. |  |
-| **object_id** | **String** | The object ID of the managed identity. | [optional][readonly] |
+| **_object_id** | **String** | The object ID of the managed identity. | [optional][readonly] |
 | **client_id** | **String** | The client ID of the managed identity. | [optional][readonly] |
 | **tenant_id** | **String** | The tenant ID of the managed identity. | [optional][readonly] |
 
@@ -16,7 +16,7 @@ require 'azure_rest'
 
 instance = AzureRest::IdentityBindingManagedIdentityProfile.new(
   resource_id: null,
-  object_id: null,
+  _object_id: null,
   client_id: null,
   tenant_id: null
 )
